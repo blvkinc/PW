@@ -1,7 +1,7 @@
 .footer {
   background-color: #141414;
   color: #fff;
-  padding: 5rem;
+  padding: 3rem;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -10,23 +10,43 @@
   align-items: center; /* Center the footer content vertically */
 }
 
+
 .footer_main {
-  width: 60%; /* Increase the width of the footer_main to 60% */
+  width: 100%;
+  padding: 2rem 5rem; /* Adjust padding as needed */
+}
+.footer__top {
   display: flex;
-  justify-content: flex-start; /* Left-align the content within the footer_main */
-  flex-wrap: wrap; /* Allow content to wrap to the next line if necessary */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; /* Add some spacing between top and bottom rows */
 }
 
+.footer__logo,
+.footer__social {
+  flex: 1;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 a {
-  color: #9c9c9c !important;
+  color: #ededed !important;
   text-decoration: none;
   margin-bottom: 0.5rem;
   transition: color 0.3s ease;
   cursor: none; /* Add transition to smoothly change color on hover */
 }
 
+.social:hover{
+  color: #767676 !important; /* Change link color to white when hovered */
+  cursor: none;
+}
+
 .footer_item:hover {
-  color: #fff !important; /* Change link color to white when hovered */
+  color: #767676 !important; /* Change link color to white when hovered */
   cursor: none;
 }
 
@@ -35,13 +55,11 @@ a:hover{
 }
 .footer__nav {
   display: flex;
-  justify-content: space-between; /* To maintain the same structure, use space-between */
-  width: 100%; /* Set the width of the footer__nav to 100% */
+  gap: 1rem; /* Add some gap between the links */
 }
-
 .footer__section {
   margin-bottom: 1rem;
-  cursor: none;
+  flex: 1; /* Distribute available space evenly among footer sections */
 }
 
 .footer__left,
@@ -65,7 +83,7 @@ a:hover{
 
 .footer__copy {
   margin: 0;
-  color: #5a5a5a;
+  color: #ededed;
   text-align: center; /* Center the copyright text */
   font-size: 0.8rem; /* Make the font size smaller */
 }
@@ -83,7 +101,38 @@ a:hover{
 }
 
 .footer_item {
-  color: #9c9c9c !important;
+  color: #ededed !important;
   padding: 10px;
   cursor: none;
 }
+
+.footer__list {
+  list-style: none; /* Remove default bullet points from the list */
+  padding: 0; /* Remove padding from the list */
+}
+
+
+.footer__social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem; /* Add some gap between social media links */
+}
+
+.social_logo{
+margin: 10px;
+opacity: 1; /* Initial opacity */
+transition: opacity 0.3s ease;
+}
+
+.social_logo:hover {
+  opacity: 0.5; /* Reduce opacity on hover */
+}
+
+.footer_logo{
+  opacity: 1; /* Initial opacity */
+  transition: opacity 0.3s ease;
+  }
+  
+  .footer_logo:hover {
+    opacity: 0.5; /* Reduce opacity on hover */
+  }
