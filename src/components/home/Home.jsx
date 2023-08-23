@@ -40,10 +40,10 @@ function Home() {
        <Data />
       </div>
       <div className="video__area revealUp">
-       <Video /> 
+      <Services />
       </div>
       <div className="service__area revealUp">
-        <Services />
+        <Video /> 
       </div>
       <div className="reviews__area revealUp">
         <Reviews />
