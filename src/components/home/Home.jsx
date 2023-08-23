@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import Video from './content/video';
 import Data from './content/data';
+import Services from './content/services';
 import Reviews from './content/reviews';
+
 import './Home.css'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -34,11 +36,14 @@ function Home() {
     <section className="home section" id="home">
   <div className="home__container container">
     <div className="home__content">
-      <div className="video__area revealUp">
-        <Video />
-      </div>
       <div className="data__area revealUp">
-        <Data />
+       <Data />
+      </div>
+      <div className="video__area revealUp">
+       <Video /> 
+      </div>
+      <div className="service__area revealUp">
+        <Services />
       </div>
       <div className="reviews__area revealUp">
         <Reviews />

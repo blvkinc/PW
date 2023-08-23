@@ -9,6 +9,9 @@
   "dependencies": {
   
     
+  "@loadable/component": "^5.15.3",
+  
+    
   "@react-three/drei": "^9.80.3",
   
     
@@ -21,10 +24,13 @@
   "@testing-library/react": "^13.4.0",
   
     
-  "@testing-library/user-event": "^13.5.0",
+  "@testing-library/user-event": "^14.4.3",
   
     
   "@types/three": "^0.155.0",
+  
+    
+  "bootstrap": "^5.3.1",
   
     
   "gsap": "^3.12.2",
@@ -34,6 +40,9 @@
   
     
   "react": "^18.2.0",
+  
+    
+  "react-bootstrap": "^2.8.0",
   
     
   "react-dom": "^18.2.0",

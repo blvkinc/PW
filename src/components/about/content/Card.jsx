@@ -1,21 +1,27 @@
 import React from 'react';
 import '../About.css';
-import TaskMaster from '../../../assets/avatar/TaskMaster.png';
-import Gatekeeper from '../../../assets/avatar/GateKeeper.png';
-import StrategySage from '../../../assets/avatar/Strategy Sage.png';
-import WanderingWizard from '../../../assets/avatar/Wandering Wizard.png';
-import PixelPicasso from '../../../assets/avatar/Pixel Picasso.png';
+import TaskMasterN from '../../../assets/avatar/TASKMASTER normal.png';
+import TaskMasterH from '../../../assets/avatar/TASKMASTER hover.png';
+import GatekeeperN from '../../../assets/avatar/GATEKEEPER normal.png';
+import GatekeeperH from '../../../assets/avatar/GATEKEEPER hover.png';
+import StrategySageN from '../../../assets/avatar/STRATEGY SAGE normal.png';
+import StrategySageH from '../../../assets/avatar/STRATEGY SAGE hover.png';
+import WanderingWizardN from '../../../assets/avatar/WANDERING WIZARD normal.png';
+import WanderingWizardH from '../../../assets/avatar/WANDERING WIZARD hover.png';
+import PixelPicassoN from '../../../assets/avatar/PIXEL PICASSO normal.png';
+import PixelPicassoH from '../../../assets/avatar/PIXEL PICASSO hover.png';
 
 function Card() {
   return (
     <section className="about__container">
       <div className="card__grid_about">
-      <div className="card__about">
-        <div className="content">
-          <img src={TaskMaster} alt="" className="avatar" />
-          <h3>Taskmaster</h3>
-          <div className="hover_content">
-            <p>
+  <div className="card__about">
+    <div className="content">
+      <img src={TaskMasterN} alt="" className="avatar normal-avatar" />
+      <img src={TaskMasterH} className="avatar hover-avatar img-top" alt="Card Front" />
+      <h3>Taskmaster</h3>
+      <div className="hover_content">
+        <p>
               The Taskmaster is a dynamic force within the team, orchestrating
               and optimizing operations with precision and finesse. With his
               keen eye for detail and exceptional organizational skills, he
@@ -28,7 +34,8 @@ function Card() {
       </div>
       <div className="card__about">
         <div className="content">
-          <img src={StrategySage} alt="" className="avatar" />
+        <img src={StrategySageN} alt="" className="avatar normal-avatar" />
+      <img src={StrategySageH} className="avatar hover-avatar img-top" alt="Card Front" />
           <h3>Strategy Sage</h3>
           <div className="hover_content">
             <p>
@@ -45,7 +52,9 @@ function Card() {
       </div>
       <div className="card__about">
         <div className="content">
-          <img src={Gatekeeper} alt="" className="avatar" />
+        <img src={GatekeeperN} alt="" className="avatar normal-avatar" />
+      <img src={GatekeeperH} className="avatar hover-avatar img-top" alt="Card Front" />
+      
           <h3>Gatekeeper</h3>
           <div className="hover_content">
             <p>
@@ -62,7 +71,9 @@ function Card() {
       </div>
       <div className="card__about">
         <div className="content">
-          <img src={PixelPicasso} alt="" className="avatar" />
+        <img src={PixelPicassoN} alt="" className="avatar normal-avatar" />
+      <img src={PixelPicassoH} className="avatar hover-avatar img-top" alt="Card Front" />
+      
           <h3>Pixel Picasso</h3>
           <div className="hover_content">
             <p>
@@ -78,7 +89,9 @@ function Card() {
       </div>
       <div className="card__about">
         <div className="content">
-          <img src={WanderingWizard} alt="" className="avatar" />
+        <img src={WanderingWizardN} alt="" className="avatar normal-avatar" />
+      <img src={WanderingWizardH} className="avatar hover-avatar img-top" alt="Card Front" />
+      
           <h3>Wandering Wizard</h3>
           <div className="hover_content">
             <p>

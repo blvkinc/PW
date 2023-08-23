@@ -24,8 +24,8 @@ function Footer() {
           <div className="footer__section">
             <ul className="footer__section">
               <li><Link to="/contact" className='footer_title'>Contact</Link></li>
-              <li className='footer_item'>Email: pixvo@protonmail.com</li>
-              <li className='footer_item'>Mobile: </li>
+              <li className='footer_item'>Email: contact@pixvo.studio</li>
+              <li className='footer_item'> </li>
             </ul>
           </div>
         </div>

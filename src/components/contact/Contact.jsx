@@ -54,7 +54,7 @@ function Contact() {
   const handleSendEmail = () => {
     const { name, email, message } = formData;
     const subject = 'Contact Form Submission';
-    const mailtoLink = `mailto:pixvo@protonmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:contact@pixvo.studio?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     )}`;
 
@@ -64,7 +64,7 @@ function Contact() {
   return (
     <div className="contact__container revealUp" >
        <h1 className={animate ? 'lineUp' : ''}>Contact</h1>
-      <h2 id="desc">Describe your project with us to elevate your <br />product to the next level.</h2>
+      <h4 id="desc">Describe your project with us to elevate your <br />product to the next level.</h4>
       <form className="contact__form">
         <div className="input__group">
           <input type="text" id="name" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />

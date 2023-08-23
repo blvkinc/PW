@@ -1,7 +1,4 @@
 .home__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  grid-gap: 3rem;
   padding-top: 1rem;
 }
 
@@ -27,7 +24,7 @@
 }
 /* Video COMPONENT CSS */
 #gif{
-  mix-blend-mode: darken;
+  mix-blend-mode: normal;
 }
 #quotes{
   max-height: 30px;
@@ -38,19 +35,17 @@
 
 /* DATA COMPONENT CSS */
 .data__area {
-  text-align: left !important; 
-  margin-left: 1rem;
-}
-h1{
-  font-size: 63.96px;
+
 }
 
 .para__title{
-  font-size: 23px;
+  font-size: 3rem;
 }
 
 .para__content{
-  font-size: 21px;
+  font-size: clamp(20px, 5vw, 25px);
+  margin-top: auto;
+  text-align: justify;
 }
 
 .quote p {
@@ -59,7 +54,8 @@ h1{
 
 .buttons {
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -70,7 +66,6 @@ button {
   color: #fff;
   border: none;
   border-radius: 5px;
-
   transition: background-color 0.3s ease;
 }
 
@@ -79,15 +74,47 @@ button:hover {
   color:#141414 ;
 }
 
-/* Reviews */
-/* Reviews */
-#carousel_title{
-  margin-top: 1rem;
+h1 {
+  font-size: clamp(3rem, 10vw, 6rem);
+  color: rgb(41, 41, 41);
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
-.reviews__area {
+.container_title{
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: left;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  overflow: hidden;
+}
+
+h2{
+  font-size: clamp(3rem, 14vw, 10rem) !important; 
+  color: rgb(41, 41, 41);
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+h3{
+  font-size: clamp(20px, 7vw, 20px) !important; 
+  color: rgb(41, 41, 41);
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+h4{
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+
+/* Reviews */
+/* Testimonials */
+.testimonials-container {
   grid-column: span 2;
   text-align: center;
- /* Adjust this value as needed */
+  margin-top: 1rem;
 }
 
 .slide__item {
@@ -125,34 +152,10 @@ button:hover {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
-  margin-top: 0px;
+  margin-top: 10px; /* Adjust as needed */
 }
 
 /* Carousel controls */
-.Wallop-buttonPrevious,
-.Wallop-buttonNext {
-  background-color: transparent;
-  border: none;
-  width: 65px;
-  padding: 10px 20px;
-  transition: opacity 200ms;
-  position: absolute;
-  top: calc(50% - 40px); /* Adjust this value as needed */
-  z-index: 2;
-
-}
-
-.Wallop-buttonNext {
-  right: 0;
-  transform: translate3d(0, -50%, 0) rotate(180deg);
-}
-
-.Wallop-buttonPrevious:hover,
-.Wallop-buttonNext:hover,
-.Wallop-buttonPrevious:focus,
-.Wallop-buttonNext:focus {
-  opacity: 0.6;
-}
 
 /* Carousel indicators */
 .carousel-indicators .active {
@@ -166,3 +169,6 @@ button:hover {
   border: 2px solid #354052;
   background-color: #354052;
 }
+
+
+/* Services COMPONENT CSS */

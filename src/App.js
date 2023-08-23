@@ -24,7 +24,13 @@ function App() {
   return (
     <div>
       <div className={`loading-container ${isLoading ? 'loading-active' : ''}`}>
-        <img className="loading-gif" src={img} alt="Loading" />
+      <img
+          className="loading-gif"
+          src={img}
+          alt="Loading"
+          width="100" 
+          height="100" 
+        />
       </div>
       <CustomCursor />
       {!isLoading && (
