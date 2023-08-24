@@ -15,9 +15,9 @@ function Footer() {
             <Link to="/" className="footer_title"><img src={logo} alt=""  width="80" height="80" className='footer_logo' /></Link>
           </div>
           <div className="footer__social">
-            <a href="https://www.instagram.com/pixvo_studio/" target="_blank" rel="noopener noreferrer" className='social'><img src={instagram} alt=""  width="40" height="40" className='social_logo' /></a>
-            <a href="https://www.behance.net/pixvostudio" target="_blank" rel="noopener noreferrer" className='social'><img src={Behance} alt=""  width="50" height="50" className='social_logo' /></a>
-            <a href="https://www.linkedin.com/company/pixvo-studio/" target="_blank" rel="noopener noreferrer" className='social'><img src={Linkedin} alt=""  width="40" height="40"  className='social_logo'/></a>
+            <a href="https://www.instagram.com/pixvo_studio/" target="_blank" rel="noopener noreferrer" className='social' aria-label="visit our instagram"><img src={instagram} alt=""  width="40" height="40" className='social_logo' /></a>
+            <a href="https://www.behance.net/pixvostudio" target="_blank" rel="noopener noreferrer" className='social' aria-label="visit our behance"><img src={Behance} alt=""  width="50" height="50" className='social_logo' /></a>
+            <a href="https://www.linkedin.com/company/pixvo-studio/" target="_blank" rel="noopener noreferrer" className='social' aria-label="visit our linkedin"><img src={Linkedin} alt=""  width="40" height="40"  className='social_logo'/></a>
           </div>
         </div>
         <div className="footer__bottom">

@@ -37,7 +37,9 @@
 .data__area {
 
 }
-
+.reviews__area {
+margin-bottom: 2rem;
+}
 .para__title{
   font-size: 3rem;
 }
@@ -112,9 +114,11 @@ h4{
 /* Reviews */
 /* Testimonials */
 .testimonials-container {
-  grid-column: span 2;
   text-align: center;
   margin-top: 1rem;
+  box-shadow: 20px 20px 60px #bebebe,
+  -20px -20px 60px #ffffff;
+  border-radius: 40px;
 }
 
 .slide__item {
@@ -125,8 +129,10 @@ h4{
   align-items: center;
   justify-content: center;
   height: 380px;
-  padding: 1px;
+  padding: 20px;
   color: #354052;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .slide__heading {
@@ -152,23 +158,42 @@ h4{
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
-  margin-top: 10px; /* Adjust as needed */
+  margin-top: 10px;
 }
 
-/* Carousel controls */
-
-/* Carousel indicators */
-.carousel-indicators .active {
-  background-color: #fff;
-  width: 14px;
-  height: 14px;
-  transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+/* Splide Styles */
+.splide {
+  width: 100%;
 }
 
-.carousel-indicators li {
-  border: 2px solid #354052;
-  background-color: #354052;
+.splide__track {
+  display: flex;
 }
 
+.splide__slide {
+  flex: 0 0 auto;
+}
 
-/* Services COMPONENT CSS */
+/* Splide Dots */
+.splide__pagination {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  background-color: #2d2d2d;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #2d2d2d;
+}
+
+.splide__pagination__page:focus {
+  outline: none;
+}

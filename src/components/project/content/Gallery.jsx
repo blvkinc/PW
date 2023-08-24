@@ -4,7 +4,6 @@ import zero from '../../../assets/project_images/zero.png';
 import can from '../../../assets/project_images/c.gltf';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { useControls } from 'leva';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 const LazyIframe = lazy(() => import('./LazyIframe'));

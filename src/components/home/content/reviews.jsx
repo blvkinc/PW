@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Home.css'; // Import your CSS file
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Carousel } from 'react-responsive-carousel';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 const Testimonials = () => {
   const testimonialsData = [
@@ -23,18 +23,30 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="wrapper">
-      <Carousel showStatus={false} showThumbs={false} infiniteLoop autoPlay interval={5000}>
+    <div className="testimonials-container">
+      <Splide
+        options={{
+          type: 'slide',
+          rewind: true,
+          perPage: 1,
+          perMove: 1,
+          gap: '1rem',
+          autoplay: true,
+          interval: 5000,
+        }}
+      >
         {testimonialsData.map((testimonial, index) => (
-          <div key={index} className="slide__item">
-            <p className="slide__heading">{testimonial.rating}</p>
-            <blockquote>
-              <p className="slide__quote">{testimonial.quote}</p>
-              <cite className="slide__cite">- {testimonial.author}</cite>
-            </blockquote>
-          </div>
+          <SplideSlide key={index}>
+            <div className="slide__item">
+              <p className="slide__heading">{testimonial.rating}</p>
+              <blockquote>
+                <p className="slide__quote">{testimonial.quote}</p>
+                <cite className="slide__cite">- {testimonial.author}</cite>
+              </blockquote>
+            </div>
+          </SplideSlide>
         ))}
-      </Carousel>
+      </Splide>
     </div>
   );
 }

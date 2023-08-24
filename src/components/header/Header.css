@@ -7,6 +7,7 @@
   background: transparent;
    overflow: visible; /* Just for visualization */
    backdrop-filter: blur(6px);
+ 
 }
 
 .header {
@@ -158,3 +159,4 @@
     animation: opacityChange 3s infinite alternate;
   }
 }
+
