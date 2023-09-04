@@ -116,6 +116,15 @@ body {
   
 }
 
+.viewport-filler {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Change the background color as needed */
+}
+
 h1,
 h2,
 h3 {

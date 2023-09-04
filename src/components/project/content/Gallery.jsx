@@ -36,14 +36,7 @@ function Gallery() {
       setGltf(gltf);
     });
   }, []);
-{/* Container for centering 
-  const lightPositions = useControls({
-    light1: { value: [10, -1, 30], step: 1 },
-    light2: { value: [-3, 0, 1], step: 1 },
-    light3: { value: [1, 0, 1], step: 1 },
-    light4: { value: [0, 3, 2], step: 1 },
-    light5: { value: [0, 3, -5], step: 1 },
-  });*/}
+
 
   return (
     <div className={`page-container ${isBlurBackground ? 'blur-background' : ''}`}>
